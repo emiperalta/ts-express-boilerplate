@@ -20,7 +20,7 @@ export const getTodoById = (
 };
 
 export const postTodo = (req: Request, res: Response, next: NextFunction) => {
-    res.json({ httpMethod: req.method, id: req.params.id });
+    res.json({ httpMethod: req.method });
 };
 
 export const updateTodo = (req: Request, res: Response, next: NextFunction) => {
