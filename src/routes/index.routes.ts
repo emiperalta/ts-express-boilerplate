@@ -1,19 +1,19 @@
-import { Router, Request, Response, NextFunction } from 'express';
+import { Router } from 'express';
 import * as indexController from '../controllers/index.controller';
 
-const route = Router();
+const router = Router();
 
 // endpoints
-route.get('/', indexController.index);
+router.get('/', indexController.index);
 
-route.get('/todos', indexController.getTodos);
+router.get('/todos', indexController.getTodos);
 
-route.get('/todos/:id', indexController.getTodoById);
+router.get('/todos/:id', indexController.getTodoById);
 
-route.post('/todos', indexController.postTodo);
+router.post('/todos', indexController.postTodo);
 
-route.put('/todos/:id', indexController.updateTodo);
+router.put('/todos/:id', indexController.updateTodo);
 
-route.delete('/todos/:id', indexController.deletTodo);
+router.delete('/todos/:id', indexController.deleteTodo);
 
-export default route;
+export default router;

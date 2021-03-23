@@ -11,11 +11,7 @@ export const getTodos = (req: Request, res: Response, next: NextFunction) => {
     ]);
 };
 
-export const getTodoById = (
-    req: Request,
-    res: Response,
-    next: NextFunction
-) => {
+export const getTodoById = (req: Request, res: Response, next: NextFunction) => {
     res.json({ httpMethod: req.method, id: req.params.id });
 };
 
@@ -27,6 +23,6 @@ export const updateTodo = (req: Request, res: Response, next: NextFunction) => {
     res.json({ httpMethod: req.method, id: req.params.id });
 };
 
-export const deletTodo = (req: Request, res: Response, next: NextFunction) => {
+export const deleteTodo = (req: Request, res: Response, next: NextFunction) => {
     res.json({ httpMethod: req.method, id: req.params.id });
 };
