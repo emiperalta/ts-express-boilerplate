@@ -8,8 +8,8 @@ Personal boilerplate for Node/Express and Typescript projects.
 
 Create a .env file with PORT variable
 
-```PORT = PORT-NUMBER```
+`PORT = PORT-NUMBER`
 
 and then
 
-> npm start
+> npm run devstart
